@@ -1,0 +1,185 @@
+export default function VercelStyleLandingPage() {
+  const features = [
+    {
+      title: "Mode Hokage",
+      desc: "Tampilan penuh semangat, warna cerah, dan aura karakter utama yang terlalu optimis untuk gagal.",
+    },
+    {
+      title: "Deploy Kilat",
+      desc: "Rilis project secepat jurus bayangan. Banyak hasil, sedikit drama, minim bug sok misterius.",
+    },
+    {
+      title: "UI Menggemaskan",
+      desc: "Sudut lembut, ilustrasi playful, dan nuansa ramen-powered untuk produk yang ingin tampil beda.",
+    },
+  ];
+
+  const stats = [
+    { label: "Shadow Clones", value: "1,200+" },
+    { label: "Ramen Boost", value: "99 Bowls" },
+    { label: "Mission Clear", value: "98%" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-orange-100 via-amber-50 to-sky-100 text-zinc-900">
+      <header className="sticky top-0 z-50 border-b border-orange-300/50 bg-white/70 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-orange-500 text-lg font-black text-white shadow-lg shadow-orange-300">
+              う
+            </div>
+            <div>
+              <p className="text-sm font-semibold tracking-wide">Konoha UI</p>
+              <p className="text-xs text-zinc-500">Cute ninja landing page concept</p>
+            </div>
+          </div>
+
+          <nav className="hidden gap-8 text-sm text-zinc-600 md:flex">
+            <a href="#features" className="transition hover:text-orange-600">Jutsu</a>
+            <a href="#stats" className="transition hover:text-orange-600">Village Stats</a>
+            <a href="#cta" className="transition hover:text-orange-600">Join Team</a>
+          </nav>
+
+          <button className="rounded-2xl bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-orange-300 transition hover:scale-[1.03]">
+            Dattebayo
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section className="relative overflow-hidden">
+          <div className="absolute -left-16 top-12 h-48 w-48 rounded-full bg-orange-300/40 blur-3xl" />
+          <div className="absolute right-0 top-24 h-56 w-56 rounded-full bg-sky-300/30 blur-3xl" />
+          <div className="absolute bottom-0 left-1/3 h-40 w-40 rounded-full bg-yellow-300/30 blur-3xl" />
+
+          <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+            <div className="relative z-10 flex flex-col justify-center">
+              <span className="mb-5 inline-flex w-fit rounded-full border border-orange-300 bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-orange-700 shadow-sm">
+                Ninja Style · Cute Theme · Ready to Deploy
+              </span>
+
+              <h1 className="max-w-3xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
+                Landing page lucu dengan energi ninja paling heboh di desa.
+              </h1>
+
+              <p className="mt-6 max-w-xl text-base leading-8 text-zinc-600 md:text-lg">
+                Cocok untuk brand yang mau tampil ceria, unik, dan gampang diingat. Minimalis? Masih. Tapi sekarang lebih seperti pahlawan yang suka ramen dan terlalu percaya diri.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <button className="rounded-2xl bg-orange-500 px-6 py-3 font-semibold text-white shadow-lg shadow-orange-300 transition hover:scale-[1.03]">
+                  Mulai Misi
+                </button>
+                <button className="rounded-2xl border-2 border-orange-300 bg-white/70 px-6 py-3 font-semibold text-orange-700 transition hover:bg-orange-50">
+                  Lihat Desa
+                </button>
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-zinc-600">
+                <span className="rounded-full bg-white/80 px-4 py-2 shadow-sm">🍥 Ramen Powered</span>
+                <span className="rounded-full bg-white/80 px-4 py-2 shadow-sm">🌀 Rasengan Ready</span>
+                <span className="rounded-full bg-white/80 px-4 py-2 shadow-sm">🦊 Chaos Approved</span>
+              </div>
+            </div>
+
+            <div className="relative z-10">
+              <div className="relative rounded-[2rem] border-4 border-white/70 bg-white/60 p-4 shadow-2xl shadow-orange-200">
+                <div className="absolute -right-4 -top-4 rounded-2xl bg-yellow-300 px-4 py-2 text-sm font-bold text-orange-900 shadow-lg rotate-6">
+                  Believe it!
+                </div>
+
+                <div className="rounded-[1.7rem] border-2 border-orange-200 bg-gradient-to-br from-orange-50 via-white to-sky-50 p-5">
+                  <div className="mb-4 flex items-center gap-2">
+                    <div className="h-3 w-3 rounded-full bg-red-300" />
+                    <div className="h-3 w-3 rounded-full bg-yellow-300" />
+                    <div className="h-3 w-3 rounded-full bg-green-300" />
+                  </div>
+
+                  <div className="grid gap-4">
+                    <div className="rounded-[1.5rem] border-2 border-orange-200 bg-white/80 p-5">
+                      <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-500">Hero Card</p>
+                      <h3 className="mt-3 text-2xl font-black">Orange Energy Activated</h3>
+                      <p className="mt-2 text-sm leading-7 text-zinc-600">
+                        Tampilan hangat, lucu, dan menonjol untuk project yang ingin terasa hidup sejak first impression.
+                      </p>
+                    </div>
+
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <div className="rounded-[1.5rem] border-2 border-sky-200 bg-sky-50 p-5">
+                        <p className="text-sm text-zinc-500">Ninja Speed</p>
+                        <div className="mt-3 text-3xl font-black">0.8s</div>
+                      </div>
+                      <div className="rounded-[1.5rem] border-2 border-yellow-200 bg-yellow-50 p-5">
+                        <p className="text-sm text-zinc-500">Cute Level</p>
+                        <div className="mt-3 text-3xl font-black">999+</div>
+                      </div>
+                    </div>
+
+                    <div className="rounded-[1.5rem] border-2 border-orange-200 bg-orange-100/70 p-5">
+                      <p className="text-sm font-semibold text-orange-700">Daily Motto</p>
+                      <p className="mt-2 text-lg font-bold">Kerja keras, design manis, deploy tanpa panik.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" className="mx-auto max-w-7xl px-6 py-20">
+          <div className="mb-10 max-w-2xl">
+            <h2 className="text-3xl font-black tracking-tight md:text-4xl">Jurus andalan</h2>
+            <p className="mt-3 text-zinc-600">
+              Paket lengkap buat landing page yang terasa fun, ramah, dan tetap cukup tajam untuk bikin orang klik tombol utama.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {features.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-[1.75rem] border-2 border-white bg-white/70 p-6 shadow-lg shadow-orange-100 transition hover:-translate-y-1 hover:rotate-[-1deg]"
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-500 text-xl text-white shadow-md">
+                  🍥
+                </div>
+                <h3 className="text-xl font-black">{item.title}</h3>
+                <p className="mt-3 leading-7 text-zinc-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="stats" className="mx-auto max-w-7xl px-6 py-8">
+          <div className="grid gap-6 rounded-[2rem] border-2 border-white bg-white/60 p-8 shadow-xl shadow-orange-100 md:grid-cols-3">
+            {stats.map((item) => (
+              <div key={item.label} className="rounded-[1.5rem] border-2 border-orange-100 bg-gradient-to-b from-orange-50 to-white p-6">
+                <div className="text-4xl font-black tracking-tight text-orange-600">{item.value}</div>
+                <div className="mt-2 text-zinc-600">{item.label}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="cta" className="mx-auto max-w-7xl px-6 py-20">
+          <div className="rounded-[2rem] border-2 border-orange-200 bg-gradient-to-br from-orange-100 via-yellow-50 to-sky-100 p-10 text-center shadow-2xl shadow-orange-100">
+            <h2 className="text-3xl font-black tracking-tight md:text-5xl">
+              Siap masuk tim ninja desain?
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl leading-8 text-zinc-600">
+              Tinggal pakai komponen ini di project Next.js kamu, lalu ubah isi kontennya sesuai brand. Sisanya biarkan semangat shonen dan tombol CTA bekerja.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <button className="rounded-2xl bg-orange-500 px-6 py-3 font-semibold text-white shadow-lg shadow-orange-300 transition hover:scale-[1.03]">
+                Deploy no Jutsu
+              </button>
+              <button className="rounded-2xl border-2 border-orange-300 bg-white/70 px-6 py-3 font-semibold text-orange-700 transition hover:bg-orange-50">
+                Edit Karakter
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
