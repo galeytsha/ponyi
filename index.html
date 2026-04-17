@@ -1,0 +1,167 @@
+export default function VercelStyleLandingPage() {
+  const features = [
+    {
+      title: "Deploy Cepat",
+      desc: "Rilis project dalam hitungan detik dengan alur yang sederhana dan bersih.",
+    },
+    {
+      title: "UI Modern",
+      desc: "Tampilan minimalis, kontras tajam, dan fokus ke pengalaman pengguna.",
+    },
+    {
+      title: "Siap Produksi",
+      desc: "Struktur komponen rapi dan mudah dikembangkan untuk dashboard atau SaaS.",
+    },
+  ];
+
+  const stats = [
+    { label: "Projects", value: "120+" },
+    { label: "Deployments", value: "8.4k" },
+    { label: "Uptime", value: "99.9%" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black font-bold">
+              V
+            </div>
+            <span className="text-sm font-medium tracking-wide text-white/90">
+              Vercel UI Concept
+            </span>
+          </div>
+
+          <nav className="hidden gap-8 text-sm text-white/70 md:flex">
+            <a href="#features" className="transition hover:text-white">Features</a>
+            <a href="#stats" className="transition hover:text-white">Stats</a>
+            <a href="#cta" className="transition hover:text-white">Get Started</a>
+          </nav>
+
+          <button className="rounded-2xl border border-white/15 bg-white px-4 py-2 text-sm font-medium text-black transition hover:scale-[1.02]">
+            Deploy Now
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.14),transparent_35%)]" />
+          <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 md:grid-cols-2 md:py-32">
+            <div className="relative z-10 flex flex-col justify-center">
+              <span className="mb-4 inline-flex w-fit rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs tracking-[0.2em] text-white/70 uppercase">
+                Next.js + Tailwind + Clean UI
+              </span>
+
+              <h1 className="max-w-3xl text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+                Bangun tampilan modern yang terasa cepat, bersih, dan siap live.
+              </h1>
+
+              <p className="mt-6 max-w-xl text-base leading-7 text-white/65 md:text-lg">
+                Ini adalah template antarmuka bergaya Vercel untuk landing page, produk digital,
+                atau dashboard. Minimalis, tapi bukan minim usaha.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <button className="rounded-2xl bg-white px-5 py-3 font-medium text-black transition hover:scale-[1.02]">
+                  Mulai Project
+                </button>
+                <button className="rounded-2xl border border-white/15 px-5 py-3 font-medium text-white transition hover:bg-white/5">
+                  Lihat Demo
+                </button>
+              </div>
+            </div>
+
+            <div className="relative z-10">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl shadow-white/5">
+                <div className="rounded-[1.5rem] border border-white/10 bg-[#0b0b0b] p-5">
+                  <div className="mb-4 flex items-center gap-2">
+                    <div className="h-3 w-3 rounded-full bg-white/30" />
+                    <div className="h-3 w-3 rounded-full bg-white/20" />
+                    <div className="h-3 w-3 rounded-full bg-white/10" />
+                  </div>
+
+                  <div className="grid gap-4">
+                    <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-5">
+                      <p className="text-xs uppercase tracking-[0.2em] text-white/45">Performance</p>
+                      <h3 className="mt-3 text-2xl font-semibold">Optimized Build</h3>
+                      <p className="mt-2 text-sm text-white/60">
+                        Struktur layout modern untuk produk yang ingin terlihat premium.
+                      </p>
+                    </div>
+
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <p className="text-sm text-white/50">Realtime Deploy</p>
+                        <div className="mt-3 text-3xl font-bold">0.8s</div>
+                      </div>
+                      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                        <p className="text-sm text-white/50">UI Readiness</p>
+                        <div className="mt-3 text-3xl font-bold">98%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" className="mx-auto max-w-7xl px-6 py-20">
+          <div className="mb-10 max-w-2xl">
+            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Fitur utama</h2>
+            <p className="mt-3 text-white/60">
+              Cocok untuk startup, personal brand, agency, atau produk digital yang mau tampil meyakinkan.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {features.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/[0.07]"
+              >
+                <div className="mb-4 h-11 w-11 rounded-2xl bg-white text-black flex items-center justify-center font-semibold">
+                  ✦
+                </div>
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <p className="mt-3 leading-7 text-white/60">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="stats" className="mx-auto max-w-7xl px-6 py-8">
+          <div className="grid gap-6 rounded-[2rem] border border-white/10 bg-white/5 p-8 md:grid-cols-3">
+            {stats.map((item) => (
+              <div key={item.label} className="rounded-[1.5rem] border border-white/10 bg-black/40 p-6">
+                <div className="text-4xl font-semibold tracking-tight">{item.value}</div>
+                <div className="mt-2 text-white/55">{item.label}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="cta" className="mx-auto max-w-7xl px-6 py-20">
+          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-10 text-center">
+            <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
+              Siap jadikan ini project beneran?
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-white/65 leading-7">
+              Tinggal sambungkan ke project Next.js, lalu deploy ke Vercel. Tampilan sudah ada, tinggal isi produk dan ambisi.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <button className="rounded-2xl bg-white px-6 py-3 font-medium text-black transition hover:scale-[1.02]">
+                Deploy ke Vercel
+              </button>
+              <button className="rounded-2xl border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5">
+                Edit Komponen
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
